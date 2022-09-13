@@ -1,4 +1,12 @@
 $pink:#FF0336;
+
+@mixin responsives {
+    @media (max-width:880px) {
+        @content;
+        
+    }
+    
+ }
  @mixin responsive1 {
     @media (max-width:1180px) {
         @content;
@@ -6,3 +14,4 @@ $pink:#FF0336;
     }
     
  }
+

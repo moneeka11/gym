@@ -1,13 +1,17 @@
 .navbar {
-    background-color: black;
+    background-color: initial;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+    z-index: 1;    
    
 
     .navbar-logo {
+        .logo2{
+            display: none;
+        }
         img {
             max-width: 192px;
             width: 100%;
@@ -21,7 +25,7 @@
         grid-gap: 20px;
         
         text-align: center;
-        width: 70vw;
+        width: 60vw;
         justify-content: start;
        
         margin-left: 1rem;
@@ -64,6 +68,13 @@
 @media screen and (max-width:1180px) {
     .navbar {
         position: relative;
+        background-color: #fff;
+        .logo1{
+            display: none ;
+        }
+        .logo2{
+            display: block !important;
+        }
         .nav-menu {
             position: absolute;
             display: flex;
@@ -120,11 +131,11 @@
       
 
         .menu-icon {
+            color: black;
             display: block;
             position: absolute;
-            top: -7px;
+            top: -10px;
             right: 0;
-            color: white;
             transform: translate(-100%, 60%);
             font-size: 1.8rem;
             cursor: pointer;
@@ -133,6 +144,9 @@
          
         
           button {
+            display: none;
+          }
+          .search{
             display: none;
           }
     }

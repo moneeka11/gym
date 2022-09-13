@@ -15,16 +15,28 @@ ul {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.load{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+}
 
 .information {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     padding: 10px 0px;
+    z-index: 1;
+    position: relative;
+    @include responsive1{
+        display: none;
+    }
 
     .row {
+       
         align-items: center;
         justify-content: space-between;
-
+      
         .topbar-left {
             .location {
 
@@ -36,8 +48,8 @@ body {
                 i {
                     color: $pink;
                     position: relative;
-                    margin-right: 8px;
-                    top: 5px;
+                    margin-right: 4px;
+                    top: 4px;
                     font-size: 22px;
                     width: 22px;
                 }
@@ -91,6 +103,7 @@ body {
 
         .topbar-right {
             .schedule {
+               
 
                 position: relative;
                 padding-right: 25px;
@@ -99,8 +112,8 @@ body {
                 i{
                     position: relative;
                     margin-right: 8px;
-                    top: 5px;
-                    font-size: 22px;
+                    top: 2px;
+                    font-size: 20px;
                     width: 22px;
                     color: $pink;
                 }
@@ -130,8 +143,8 @@ body {
 
                 i {
                     position: relative;
-                    margin-right: 8px;
-                    top: 5px;
+                    margin-right: 5px;
+                    top: 4px;
                     color: $pink;
                     font-size: 22px;
                     width: 22px;

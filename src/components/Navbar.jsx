@@ -16,7 +16,8 @@ export default function Navbar() {
     <nav className="navbar">
         <div className="container-fluid">
             <div className="navbar-logo">
-                <img src="https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/gymat_light-1.svg" alt="logo" />
+                <img src="https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/gymat_light-1.svg" alt="logo" className='logo1'/>
+                <img src="https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/gymat_dark-1.svg" alt="logo2" className='logo2'/>
 
             </div>
             <ul className={click? 'nav-menu active':'nav-menu'}>

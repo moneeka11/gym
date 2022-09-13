@@ -3,8 +3,17 @@
     background-color: $pink;
     font-weight: 500;
     border: none;
+    padding: 10px 29px;
     &:hover{
         background-color: white !important;
         color: $pink !important;
+    }
+}
+.search{
+    i{
+        color: $pink;
+        font-size: 26px;
+        margin-right: -20px;
+        padding: 2px;
     }
 }
