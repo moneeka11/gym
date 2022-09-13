@@ -1,0 +1,8 @@
+$pink:#FF0336;
+ @mixin responsive1 {
+    @media (max-width:1180px) {
+        @content;
+        
+    }
+    
+ }

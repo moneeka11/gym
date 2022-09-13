@@ -1,0 +1,10 @@
+.btn{
+    color: white;
+    background-color: $pink;
+    font-weight: 500;
+    border: none;
+    &:hover{
+        background-color: white !important;
+        color: $pink !important;
+    }
+}
