@@ -1,4 +1,12 @@
 $pink:#FF0336;
+@mixin responsivexs {
+    @media (max-width:640px) {
+        @content;
+        
+    }
+    
+ }
+
 
 @mixin responsives {
     @media (max-width:880px) {
@@ -7,8 +15,37 @@ $pink:#FF0336;
     }
     
  }
+ @mixin bannerres2 {
+    @media (max-width:945px) {
+        @content;
+        
+    }
+    
+ }
+ @mixin bannerres1 {
+    @media (max-width:1030px) {
+        @content;
+        
+    }
+    
+ }
+ @mixin bannerres {
+    @media (max-width:1140px) {
+        @content;
+        
+    }
+    
+ }
+ 
  @mixin responsive1 {
     @media (max-width:1180px) {
+        @content;
+        
+    }
+    
+ }
+ @mixin  res {
+    @media (max-width:1290px) {
         @content;
         
     }

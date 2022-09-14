@@ -1,50 +1,294 @@
 .banner-main {
     position: relative;
     width: 100%;
+    overflow: hidden;
+
+
 
     .banner-slide {
         position: relative;
-        min-height: 850px;
+        min-height: 700px;
 
-        @include responsive1{
+        @include responsive1 {
             min-height: 650px;
         }
-        @include responsives{
+
+        @include responsives {
             min-height: 550px;
         }
-      
+
 
         .banner-image {
-            background-image: url("https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/03/banner-9-1.jpg");
+            background-image: url("https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/03/banner-6.jpg");
             position: absolute;
             width: 100%;
             height: 100%;
-            background-position: 100% 0;
-            background-size: cover;
-            top: -109px;
+            background-position: center 0;
+            background-size: 100% auto;
+            top: -10px;
             background-repeat: no-repeat;
-            animation: banner 4s linear infinite ;
-            @keyframes banner {
-                0%{
-                    transform: scale(1,1);
-                }
-                50%{
-                    transform: scale(1.1,1.1);
-                }
-                
-                100%{
-                    transform: scale(1,1);
-                }
-                
-            }
 
-            @include responsive1 {
-                top: 0;
-                animation: none;
-
-            }
 
         }
 
+    }
+
+    .banner-content-wrap {
+
+        .banner-content {
+            position: relative;
+            top: -580px;
+            left: 720px;
+
+            @include res {
+                left: 620px;
+            }
+
+            @include responsive1 {
+                left: 600px;
+                top: -511px;
+            }
+
+            @include bannerres {
+                left: 580px;
+                top: -511px;
+
+            }
+
+            @include bannerres1 {
+                left: 540px;
+                top: -550px;
+            }
+
+            @include bannerres2 {
+                left: 480px;
+                top: -550px;
+            }
+
+            @include responsives {
+                left: 88px;
+                top: -478px;
+            }
+            @include responsivexs {
+                left: 80px;
+                top: -536px;
+            }
+
+            .subtitle {
+                position: relative;
+                background-image: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/section-title.svg);
+                background-repeat: no-repeat;
+                color: white;
+                padding: 7px 24px;
+                margin: 0px 0px 20px;
+                font-size: 16px;
+                font-weight: 500px;
+                text-transform: uppercase;
+                animation-name: fadeInUp;
+                animation-delay: 1s;
+                animation-duration: 1s;
+
+                @keyframes fadeInUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0px);
+                    }
+
+                }
+                @include responsivexs{
+                   margin-bottom: 10px;
+
+                }
+
+            }
+
+            .title {
+                margin-bottom: 20px;
+                line-height: 1.2;
+                position: relative;
+                color: white;
+                animation-duration: 1s;
+                animation-delay: 1.2s;
+                animation-name: rt-fadeInUp;
+
+                @keyframes rt-fadeInUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateX(20px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                }
+
+                h2 {
+                    font-size: 58px;
+                    font-weight: 600;
+
+                    @include responsive1 {
+                        font-size: 30px;
+                    }
+
+                    @include bannerres {
+                        font-size: 25px;
+
+                    }
+
+                    @include bannerres1 {
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                    @include responsives{
+                        font-size: 25px;
+                    }
+                    @include responsivexs{
+                        margin-bottom: 0px;
+                        font-size: 16px;
+                    }
+
+                }
+            }
+
+            .para {
+                p {
+                    color: #cbcbcb;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    line-height: 28px;
+                    margin-bottom: 0px;
+                    animation-duration: 1s;
+                    animation-delay: 1.4s;
+                    animation-name: rt-fadeInUp;
+
+                    @keyframes rt-fadeInUp {
+                        0% {
+                            opacity: 0;
+                            transform: translateX(20px);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+
+                    }
+
+                    @include bannerres {
+                        font-size: 14px;
+
+                    }
+
+                    @include bannerres1 {
+                        font-size: 14px;
+
+                    }
+                    @include responsives{
+                        font-size: 16px;
+                        color: white;
+
+                    }
+                    @include responsives{
+                        font-size: 12px;
+                        color: white;
+
+                    }
+
+
+                }
+            }
+
+            .banner-btn {
+                margin-top: 50px;
+                animation-duration: 1s;
+                animation-delay: 1.6s;
+                animation-name: rt-fadeInUp;
+                @include responsives{
+                    margin-top: 20px;
+                }
+
+                @keyframes rt-fadeInUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateX(20px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                }
+
+                .btn-style2 {
+
+                    position: relative;
+                    display: inline-block;
+                    z-index: 5;
+
+                    &:hover::before {
+                        top: 0px;
+                        left: 0px;
+
+                    }
+
+                    &::before {
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        border-width: 1px;
+                        border-color: #d8d8d8;
+                        border-style: solid;
+                        position: absolute;
+                        top: -10px;
+                        left: 10px;
+                        z-index: -1;
+                        transition: all .4s ease-in-out;
+                    }
+
+
+                    span {
+                        padding: 13px 20px;
+                        background-color: $pink;
+                        color: white;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        transition: all 0.4s;
+                        font-weight: 500;
+
+                        @include bannerres {
+                            padding: 10px;
+
+
+                        }
+
+                        @include bannerres1 {
+                            padding: 10px;
+                            font-size: 12px;
+
+
+                        }
+
+
+                        i {
+                            margin-left: 7px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
