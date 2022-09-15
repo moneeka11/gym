@@ -231,7 +231,10 @@
 
                     position: relative;
                     display: inline-block;
-                    z-index: 5;
+                    z-index: 1;
+                    @include responsive1{
+                        z-index: 0;
+                    }
 
                     &:hover::before {
                         top: 0px;

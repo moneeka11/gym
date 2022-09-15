@@ -1,0 +1,63 @@
+.class-section {
+    position: relative;
+    top: -200px;
+    background-image: url("https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/shape-17.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .class-box {
+        padding: 100px 0px 0px 0px;
+
+        .box1 {
+            position: absolute;
+            left: 2%;
+            z-index: 0;
+        }
+
+        .row {
+            .col-lg-4 {
+                padding: 81px 0px 10px 62px;
+                .subtitle {
+                    font-size: 13px;
+                    color: #fff;
+                    position: relative;
+                    line-height: 28px;
+                    display: inline-block;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                    text-align: center;
+                    padding: 0 40px;
+                    letter-spacing: .1em;
+                    background-image: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/section-title.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .title{
+                    h2{
+                        position: relative;
+                        font-weight: 700;
+                        margin-bottom: 16px;
+                        font-size: 40px;
+                        color: #000;
+                        line-height: 44px;
+                    }
+                }
+                .para{
+                    p{
+                        position: relative;
+                        display: block;
+                        color: #646464;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 16px;
+                        line-height: 28px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}

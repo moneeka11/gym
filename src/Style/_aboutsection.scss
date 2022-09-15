@@ -1,6 +1,10 @@
 .about-section {
     position: relative;
-    top: -320px;
+    top: -290px;
+    @include bannerres2{
+        top: -200px;
+
+    }
 
     .about-container {
         position: relative;
@@ -11,7 +15,7 @@
             .image-box {
                 position: relative;
                 z-index: 1;
-                animation-duration: 1800ms;
+                animation-duration: 5s;
                 animation-delay: 1s;
                 animation-name: rt-fadeInLeft;
                 animation-fill-mode: both;
