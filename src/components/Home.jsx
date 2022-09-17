@@ -4,6 +4,8 @@ import React from 'react'
 import { useEffect } from 'react';
 import { Homedata } from '../Data/Homedata'
 import Aboutsection from './Aboutsection';
+import Choosesection from './Choosesection';
+import Classes from './Classes';
 import UpcomingClass from './UpcomingClass';
 
 export default function Home() {
@@ -55,6 +57,8 @@ export default function Home() {
     </div>
     <Aboutsection/>
     <UpcomingClass/>
+    <Classes/>
+    <Choosesection/>
 
     </>
   )

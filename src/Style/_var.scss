@@ -22,6 +22,14 @@ $pink:#FF0336;
     }
     
  }
+ @mixin swp{
+    @media (max-width:991px) {
+        @content;
+        
+    }
+    
+ }
+
  @mixin bannerres1 {
     @media (max-width:1030px) {
         @content;

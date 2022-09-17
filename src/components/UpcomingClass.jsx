@@ -16,7 +16,7 @@ export default function UpcomingClass() {
                             <img src="https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/shape-82.png" alt="" />
                         </div>
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="col-lg-5">
                                 <div className="subtitle">
                                     Upcomming Class
                                 </div>
@@ -29,14 +29,34 @@ export default function UpcomingClass() {
 
 
                             </div>
-                            <div className="col-lg-8">
-                                <OwlCarousel className='owl-theme' margin={10} nav="true" center="true">
+                            <div className="col-lg-7">
+                                <OwlCarousel className='owl-theme' margin={30} nav="true" loop="true">
                                   {
                                     Classdata.map((a)=>(
                                         <>
-                                        <div className="image">
-                                            <img src={a.image} alt="" />
-                                        </div>
+                                         <div className="box-wrap" data-merge="2">
+                                            <div className="image-box">
+                                                <img src={a.image} alt="" />
+                                                
+                                            </div>
+                                            <div className="box-content">
+                                                <div className="schedule-time">
+                                                    <div className="class-icon">
+                                                        {a.icon}
+                                                    </div>
+                                                    <div className="class-title">
+                                                        <h3>{a.title}</h3>
+                                                    </div>
+                                                    <div className="schedule">
+                                                        <p>{a.timeicon} {a.time}</p>
+                                                    </div>
+                                                    <div className="class-btn">
+                                                        <a href="#" className='btn-style'><span>{a.button}{a.bicon}</span></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                         </div>
                                         </>
                                     ))
                                   }

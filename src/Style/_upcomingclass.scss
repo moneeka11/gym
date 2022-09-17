@@ -11,13 +11,19 @@
 
         .box1 {
             position: absolute;
-            left: 2%;
+            left: 8%;
             z-index: 0;
+            padding-top: 108px;
         }
 
         .row {
-            .col-lg-4 {
-                padding: 81px 0px 10px 62px;
+            .col-lg-5 {
+                @include res {
+                    padding: 10px;
+                }
+
+                padding: 200px 0px 10px 140px;
+
                 .subtitle {
                     font-size: 13px;
                     color: #fff;
@@ -34,8 +40,9 @@
                     background-repeat: no-repeat;
                     background-position: center;
                 }
-                .title{
-                    h2{
+
+                .title {
+                    h2 {
                         position: relative;
                         font-weight: 700;
                         margin-bottom: 16px;
@@ -44,16 +51,235 @@
                         line-height: 44px;
                     }
                 }
-                .para{
-                    p{
+
+                .para {
+                    p {
                         position: relative;
                         display: block;
                         color: #646464;
                         font-family: 'Roboto', sans-serif;
-                        font-size: 16px;
+                        font-size: 18px;
                         line-height: 28px;
                         font-weight: 400;
                         margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .col-lg-7 {
+                .owl-theme .owl-nav {
+
+                    position: relative;
+                    left: -762px;
+                    top: -177px;
+
+                    @include res {
+                        display: none;
+                    }
+
+                    .owl-prev {
+                        width: 46px;
+                        height: 57px;
+                        background-color: $pink;
+
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+
+                    .owl-next {
+                        width: 46px;
+                        height: 57px;
+                        background-color: $pink;
+
+                        span {
+                            font-size: 30px;
+                        }
+
+                    }
+                }
+
+                .owl-theme .owl-dots {
+                    display: none;
+                }
+
+                .box-wrap {
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+
+                    .image-box {
+                        img {
+                            filter: grayscale(100%);
+                            transition: all .3s ease-in-out;
+                            transform: scale(1.01);
+                            width: 100%;
+
+                            &:hover {
+                                filter: none;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+
+                    .box-content {
+
+                        .schedule-time {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            padding: 30px 0 35px;
+                            text-align: center;
+                            z-index: 1;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                height: 300px;
+                                width: 374px;
+                                bottom: -80px;
+                                left: 53px;
+                                background-color: rgba(255, 255, 255, .3);
+                                border-radius: 30px 0 0 0;
+                                transform: rotate(16deg);
+                                transition: all .6s ease-in-out;
+                                z-index: -1;
+
+                                @include res {
+                                    width: 325px;
+                                    height: 304px;
+                                }
+
+                                @include responsive1 {
+                                    width: 280px;
+                                    height: 304px;
+                                }
+
+                                @include swp {
+                                    width: 461px;
+                                    height: 345px;
+                                }
+
+                                @include responsives {
+                                    width: 437px;
+                                    height: 365px;
+                                }
+
+                                @include responsivexs {
+                                    display: none;
+                                }
+
+                            }
+
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                width: 379px;
+                                height: 300px;
+                                bottom: -90px;
+                                left: 28px;
+                                background-color: #fff;
+                                border-radius: 30px 0 0 0;
+                                transform: rotate(16deg);
+                                z-index: -1;
+                                transition: all .3s ease-in-out;
+
+                                @include res {
+                                    width: 325px;
+                                    height: 304px;
+                                }
+
+                                @include responsive1 {
+                                    width: 280px;
+                                    height: 304px;
+                                }
+
+                                @include swp {
+                                    width: 461px;
+                                    height: 345px;
+                                }
+
+                                @include responsives {
+                                    width: 437px;
+                                    height: 365px;
+                                }
+                                @include responsivexs {
+                                    display: none;
+                                }
+                            }
+
+                            .class-icon {
+                                color: $pink;
+                                font-size: 30px;
+                                @include responsivexs {
+                                    display: none;
+                                }
+                            }
+
+                            .class-title {
+                                h3 {
+                                    font-size: 24px;
+                                    color: #000;
+
+                                    font-weight: 700;
+                                    line-height: 36px;
+                                    @include responsivexs {
+                                        color: white;
+                                    }
+                                }
+                            }
+
+                            .class-btn {
+
+                                .btn-style {
+                                    position: relative;
+                                    z-index: 5;
+                                    display: inline-block;
+
+                                    &:hover::before {
+                                        top: 0px;
+                                        left: 0px;
+
+
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        height: 100%;
+                                        width: 100%;
+                                        border-width: 1px;
+                                        border-color: #d8d8d8;
+                                        border-style: solid;
+                                        position: absolute;
+                                        top: -10px;
+                                        left: 10px;
+                                        z-index: -1;
+                                        transition: all .4s ease-in-out;
+                                    }
+
+                                    span {
+                                        font-size: 14px;
+                                        text-transform: uppercase;
+                                        letter-spacing: 1px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: #fff;
+                                        background-color: $pink;
+                                        padding: 13px 30px;
+                                        transition: all .4s;
+                                        font-weight: 500;
+
+
+                                    }
+
+                                }
+
+
+
+                            }
+                        }
                     }
                 }
             }
