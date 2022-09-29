@@ -1,0 +1,107 @@
+.testimonail {
+    position: relative;
+    top: -50px;
+    padding: 10px 0px;
+
+    .content {
+        .subtitle {
+            background: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/section-title.svg);
+            font-size: 14px;
+            color: #fff;
+            position: relative;
+            line-height: 28px;
+            display: inline-block;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 0 40px;
+            letter-spacing: 0.1em;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #000;
+            font-weight: 700;
+            line-height: 44px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .parag {
+        p {
+            font-size: 16px;
+            color: #646464;
+            margin: 57px 0px 10px 0px;
+            font-family: 'Roboto', sans-serif;
+
+            @include responsives {
+                margin: 20px 0px;
+            }
+        }
+    }
+
+    .testimonial-wrapper {
+        border: 9px solid #efefef;
+        padding: 30px;
+        margin-top: 80px;
+
+        .img-box {
+            background-color: #000;
+
+            img {
+                position: relative;
+                top: 0px;
+                border-radius: 0 200px 0 0;
+            }
+        }
+
+        .slider-testinomail {
+            padding: 75.5px 60px;
+            z-index: 1;
+            position: relative;
+            background-color: #000;
+
+            .testinomial-box-wrap {
+                .testimonial-qoute {
+                    img {
+                        height: 56px;
+                        width: 71px;
+                        margin-bottom: 30px;
+
+                    }
+
+
+                }
+
+                .pgh {
+                    p {
+                        font-size: 17px;
+                        font-style: italic;
+                        color: #dedede;
+                        margin-bottom: 25px;
+
+                    }
+                }
+
+                .testimonial-content {
+                    .testimonial-title {
+                        color: #fff;
+                        font-size: 22px;
+                        margin-bottom: 5px;
+                    }
+                    .testimonial-designation{
+                        font-size: 16px;
+                        color: #dedede;
+                    }
+                }
+
+            }
+
+
+
+
+        }
+
+    }
+}

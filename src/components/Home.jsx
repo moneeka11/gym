@@ -7,6 +7,8 @@ import Aboutsection from './Aboutsection';
 import Choosesection from './Choosesection';
 import Classes from './Classes';
 import UpcomingClass from './UpcomingClass';
+import TraineeSection from './TraineeSection';
+import Testinomial from './Testinomial';
 
 export default function Home() {
  useEffect(()=>{
@@ -59,6 +61,8 @@ export default function Home() {
     <UpcomingClass/>
     <Classes/>
     <Choosesection/>
+    <TraineeSection/>
+    <Testinomial/>
 
     </>
   )

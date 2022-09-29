@@ -1,0 +1,83 @@
+.trainer {
+    padding: 80px 0px;
+    // height: 1100px;
+    background: url("https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/Group-47-1-1.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -100px;
+    z-index: 1;
+
+    .t-banner {
+        position: absolute;
+        right: 0px;
+        top: 85px;
+        z-index: -1;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: #fff;
+        position: relative;
+        line-height: 28px;
+        display: inline-block;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0 40px;
+        letter-spacing: 0.1em;
+        background: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/section-title.svg);
+
+    }
+    .section-title{
+        color: #fff;
+        margin-bottom: 10px;
+        line-height: 44px;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .trainer-grid{
+        .trainer-box{
+            background-color: #E9ECEF;
+            padding: 17px 0px 16px;
+            border-radius: 160px;
+            @include responsive1{
+                border-radius: 10px;
+            }
+            .content{
+                margin: 109px 0px 20px 79px;
+              
+               
+                h3{
+                    font-size: 26px;
+                    font-weight: 700;
+                    a{
+                        color: $pink;
+                    }
+                }
+                h4{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #646464;
+                }
+            }
+            
+            .social-icon{
+                ul{
+                    margin-left: 79px;
+                    li{
+                        a{
+                            color: #646464;
+                            margin-right: 10px;
+                            &:hover{
+                                color: $pink;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
