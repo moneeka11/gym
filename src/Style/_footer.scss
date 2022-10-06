@@ -1,0 +1,153 @@
+.footer-section {
+    background-color: #ffff;
+    position: relative;
+    padding: 60px 0px 80px;
+    .image{
+        position: absolute;
+        right: 0;
+        z-index: 0;
+        bottom: -50px;
+    }
+
+    .gym-about {
+        .logo {
+            margin-bottom: 32px;
+        }
+
+        .footer-about {
+            word-spacing: 1px;
+            margin-bottom: 38px;
+            color: #9a9999;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-social {
+            padding: 0px;
+
+            li {
+                display: inline-block;
+                margin-right: 5px;
+                padding-bottom: 0;
+                transition: all .3s ease-in-out;
+
+                a {
+                    font-size: 16px;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    background-color: #efefef;
+                    color: #646464;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: $pink;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-class {
+        .widgettitle {
+            position: relative;
+            color: #000;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+
+            &::after {
+                content: "";
+                height: 4px;
+                width: 37px;
+                background-color: #ff0336;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .menu-class{
+            ul{
+                padding: 0px;
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        color: #646464;
+                        font-weight: 500;
+                        position: relative;
+                       
+                    
+                        &:hover{
+                            color: #ff0336;
+                         
+                          
+
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .gym-address{
+        position: relative;
+        z-index: 1;
+        .widgettitle {
+            position: relative;
+            color: #000;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+
+            &::after {
+                content: "";
+                height: 4px;
+                width: 37px;
+                background-color: #ff0336;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .corporate-address{
+            padding: 0px;
+            
+            li{
+                color: #646464;
+               font-size: 16px;
+                 font-weight: 400;
+                 margin-bottom: 10px;
+                 i{
+                    color: #ff0336; 
+                    margin-right: 10px;
+                 }
+                 a{
+                    color: #000;
+                    font-weight: 600;
+                 }
+            }
+
+        }
+            
+    }
+}
+.copy-right{
+    position: relative;
+    z-index: 1;
+    background-color: #000;
+    color:white;
+    padding: 20px 0px;
+    a{
+        color: white;
+    }
+}

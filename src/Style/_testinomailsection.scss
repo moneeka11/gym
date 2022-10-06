@@ -48,19 +48,55 @@
 
         .img-box {
             background-color: #000;
+            
 
             img {
                 position: relative;
                 top: 0px;
                 border-radius: 0 200px 0 0;
+               
+                @include swp{
+                    border-radius:0;
+                    width: 100%;
+
+                }
+                @include responsive1{
+                    border-radius:0;
+                   
+
+                }
             }
         }
 
         .slider-testinomail {
-            padding: 75.5px 60px;
-            z-index: 1;
+            padding: 65px 60px;
+            
             position: relative;
             background-color: #000;
+             .owl-dots{
+                display: none;
+             }
+             .owl-theme .owl-nav{
+                text-align: right;
+                margin-top: 42px;
+                .owl-prev{
+                    background-color: $pink;
+                    width: 37px;
+                    height: 40px;
+                    span {
+                        font-size: 27px;
+                    }
+                }
+                .owl-next{
+                    background-color: $pink;
+                    width: 37px;
+                    height: 40px;
+                    span {
+                        font-size: 27px;
+                    }
+
+                }
+             }
 
             .testinomial-box-wrap {
                 .testimonial-qoute {

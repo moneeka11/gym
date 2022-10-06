@@ -1,0 +1,20 @@
+.logo-slider-wrapper{
+    padding: 20px 0px;
+    margin-bottom: 60px;
+    .item{
+        .imge{
+            
+            img{
+                border-radius: 20px;
+                transition: all 0.2s linear;
+                &:hover{
+                    cursor: pointer;
+                    transition: all 0.2s linear;
+                    background-color: black;
+                   border-radius: 20px;
+                   
+                }
+            }
+        }
+    }
+}

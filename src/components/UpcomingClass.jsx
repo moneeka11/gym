@@ -30,7 +30,7 @@ export default function UpcomingClass() {
 
                             </div>
                             <div className="col-lg-7">
-                                <OwlCarousel className='owl-theme' margin={30} nav="true" loop="true">
+                                <OwlCarousel className='owl-theme' margin={30} nav="true" loop="false">
                                   {
                                     Classdata.map((a)=>(
                                         <>

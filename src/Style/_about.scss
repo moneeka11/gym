@@ -1,0 +1,420 @@
+.entry-banner {
+    position: relative;
+    background: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .entry-banner-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+
+        .entry-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 52px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 42px;
+            margin: 0 0 6px;
+        }
+
+        .breadcrumb-area {
+            .entry-breadcrumb {
+                background: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/breadcumb-shape.svg);
+                display: inline-block;
+                padding: 0 50px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-left: -25px;
+
+                .bread1 {
+                    text-transform: capitalize;
+                    font-size: 15px;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                .bread2 {
+
+                    font-size: 15px;
+
+                    a {
+                        color: $pink;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.about-sectionn {
+    position: relative;
+    top: 0px;
+    padding: 100px 0px;
+    background-color: white;
+
+    .image-box {
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 195px;
+            width: 6px;
+            background-color: #ff0336;
+            position: absolute;
+            bottom: 65px;
+            right: -30px;
+            transition: all .3s ease-in-out;
+        }
+
+        &::after {
+            content: "";
+            height: 195px;
+            width: 6px;
+            background-color: #ff0336;
+            position: absolute;
+            top: 68px;
+            left: -30px;
+            transition: all .3s ease-in-out;
+        }
+
+        // .image-border {}
+
+        .img-inner {
+            position: absolute;
+            z-index: 1;
+            bottom: 65px;
+            left: 0;
+            padding-left: 100px;
+            @include res{
+                padding-left: 50px;
+            }
+            @include responsive1{
+                padding-left: 60px;
+            }
+        }
+    }
+
+    .about-content {
+        padding: 0px 12px 0px 60px;
+        margin: 104px 0px 0px 0px;
+        @include responsive1{
+            padding:0px 12px 0px 70px;
+        }
+        @include swp{
+            padding: 0px;
+        }
+
+        .subtitle {
+            background: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/img/section-title.svg);
+            font-size: 15px;
+            color: #fff;
+            position: relative;
+            line-height: 28px;
+            display: inline-block;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 0 40px;
+            letter-spacing: .1em;
+        }
+
+        .title {
+            h2 {
+                font-size: 36px;
+                color: #000;
+                line-height: 44px;
+                margin-bottom: 10px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+            }
+        }
+
+        .paragh {
+            p {
+                font-size: 16px;
+                color: #646464;
+
+            }
+        }
+    }
+
+    .about-list {
+        ul {
+            list-style: disc;
+            margin: 0px 0px 16px 16px;
+            padding-left: 60px;
+            @include swp{
+                padding-left: 0px;
+            }
+
+            li {
+                color: #444444;
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .btn-area {
+        padding-left: 60px;
+        margin-top: 40px;
+        @include swp{
+            padding-left: 0px;
+        }
+
+
+        .banner-btn {
+            .btn-style2 {
+
+                position: relative;
+                display: inline-block;
+                z-index: 1;
+
+
+                &:hover::before {
+                    top: 0px;
+                    left: 0px;
+
+                }
+
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    border-width: 1px;
+                    border-color: #d8d8d8;
+                    border-style: solid;
+                    position: absolute;
+                    top: -10px;
+                    left: 10px;
+                    z-index: -1;
+                    transition: all .4s ease-in-out;
+                }
+
+
+                span {
+                    padding: 13px 30px;
+                    background-color: $pink;
+                    color: white;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    transition: all 0.4s;
+                    font-weight: 500;
+
+
+
+
+
+                    i {
+                        margin-left: 7px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.class-sectionn {
+    position: relative;
+
+    .action-box {
+        // box-shadow: 0 10px 38px rgb(0 0 0 / 11%);
+        min-height: 180px;
+        @include swp{
+            margin-bottom: 20px;
+        }
+
+        .col-lg-6 {
+
+            .content {
+                align-self: center;
+                padding: 33px 20px 30px 40px;
+                background-color: #fff;
+                margin-left: 60px;
+                @include ressm{
+                    margin-left: 0px;
+                }
+
+
+                .cta-title {
+                    h2 {
+                        font-size: 21px;
+                        line-height: 1.4;
+                        font-weight: 700;
+                    }
+                }
+
+                .cta-button {
+                    margin-top: 20px;
+
+                    .btn-style3 {
+                        position: relative;
+                        z-index: 5;
+                        display: inline-block;
+
+                        &:hover::before {
+                            top: 0px;
+                            left: 0px;
+
+                        }
+
+                        &::before {
+                            content: "";
+                            height: 100%;
+                            width: 100%;
+                            border-width: 1px;
+                            border: 1px solid #d8d8d8;
+                            border-style: solid;
+                            position: absolute;
+                            top: -10px;
+                            left: 10px;
+                            z-index: -1;
+                            transition: all .4s;
+                        }
+
+                        span {
+                            font-size: 11px;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #fff;
+                            background-color: #3f3f3f;
+                            box-shadow: 0 6px 43px rgb(0 0 0 / 16%);
+                            padding: 12px 12px;
+                            transition: all .4s;
+                            font-weight: 500;
+
+                            &:hover {
+                                background-color: $pink;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cta-img {
+                width: 300px;
+                height: 180px;
+                background-color: #fff;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    clip-path: polygon(37% 0, 100% 0, 100% 100%, 0 100%);
+
+                    &:hover {
+                        filter: grayscale(1);
+                    }
+
+                }
+
+            }
+
+        }
+
+
+
+
+
+    }
+}
+
+.mission-section {
+    background: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/shape-17.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0px 120px 0px;
+    position: relative;
+    margin-top: 90px;
+
+    .row {
+        background-color: #fff;
+        overflow: hidden;
+
+        .col-lg-6 {
+            @include responsives{
+                margin-bottom: 20px;
+            }
+            @include swp{
+                margin-bottom: 20px;
+            }
+            .history {
+                text-align: center;
+
+                .info-box {
+                    padding: 90px 100px;
+
+                    .info-item {
+                        .info-media {
+                            .info-icon {
+                                i {
+                                    font-size: 80px;
+                                    color: $pink;
+                                    margin-bottom: 15px;
+                                    &:hover{
+                                        color: #000;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .info-content {
+                            .info-title {
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 700;
+                                margin-bottom: 5px;
+                                font-size: 36px;
+                                text-transform: capitalize;
+                                line-height: 1.5em;
+                            }
+                            .info-text{
+                                color: #646464;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+        .col-lg-6{
+            overflow: hidden;
+            padding: 0px;
+            .info-img{
+                img{
+                    overflow: hidden;
+                    transform: scale(1);
+                    transition: all .4s ease-out;
+                    width: 100%;
+                    &:hover{
+                        overflow: hidden;
+                        transform: scale(1.09);
+                       
+                    }
+                }
+            
+            }
+
+        }
+
+    }
+}

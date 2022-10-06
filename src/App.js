@@ -6,6 +6,7 @@ import './Style/style.scss'
 
 import Header from './components/Header'
 import { RingLoader } from 'react-spinners'
+import Footer from './components/Footer'
 
 
 
@@ -26,8 +27,9 @@ export default function App() {
     
 
      
-      : <Header/>
+      : <><Header /><Footer /></>
     }
+   
    
     </>
   )

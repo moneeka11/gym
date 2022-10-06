@@ -9,6 +9,8 @@ import Classes from './Classes';
 import UpcomingClass from './UpcomingClass';
 import TraineeSection from './TraineeSection';
 import Testinomial from './Testinomial';
+import LogoSlider from './LogoSlider';
+import ContactBanner from './ContactBanner';
 
 export default function Home() {
  useEffect(()=>{
@@ -63,6 +65,8 @@ export default function Home() {
     <Choosesection/>
     <TraineeSection/>
     <Testinomial/>
+    <LogoSlider/>
+    <ContactBanner/>
 
     </>
   )

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 
 import Button from './Button'
 import Home from './Home';
@@ -22,28 +22,28 @@ export default function Navbar() {
             </div>
             <ul className={click? 'nav-menu active':'nav-menu'}>
                 <li className="nav-item">
-                    <Link to="/" className='nav-links' onClick={closeMobileMenu}>Home</Link>
+                    <NavLink to="/" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Home</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link to="/about" className='nav-links' onClick={closeMobileMenu}>About</Link>
+                    <NavLink to="/about" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>About</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link to="/" className='nav-links' onClick={closeMobileMenu}>Trainer
-                    </Link>
+                    <NavLink to="/c" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Trainer
+                    </NavLink>
                    
                 </li>
                 <li className="nav-item">
-                    <Link to="/" className='nav-links' onClick={closeMobileMenu}>Class</Link>
+                    <NavLink to="/c" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Class</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link to="/" className='nav-links' onClick={closeMobileMenu}>Schedule</Link>
+                    <NavLink to="/c" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Schedule</NavLink>
                 </li>
               
                 <li className="nav-item">
-                    <Link to="/" className='nav-links' onClick={closeMobileMenu}>Contact</Link>
+                    <NavLink to="/c" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Contact</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link to="/" className='nav-links-mobile'onClick={closeMobileMenu} >Join Class Now</Link>
+                    <Link to="/c" className='nav-links-mobile'  onClick={closeMobileMenu} >Join Class Now</Link>
                 </li>
             </ul>
             <Button />

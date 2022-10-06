@@ -6,6 +6,12 @@ $pink:#FF0336;
     }
     
  }
+ @mixin  ressm {
+    @media (max-width:760px){
+        @content;
+    }
+    
+ }
 
 
 @mixin responsives {

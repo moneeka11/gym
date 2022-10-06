@@ -1,6 +1,13 @@
 import React from 'react'
+import { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 export default function TraineeSection() {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    
+      }, [])
   return (
     <>
     <div className="trainer">
@@ -16,7 +23,7 @@ export default function TraineeSection() {
         </div>
         <div className="trainer-grid mt-5">
             <div className="row">
-                <div className="col-lg-6  mb-md-5 mb-sm-4">
+                <div className="col-lg-6  mb-md-5 mb-sm-4" data-aos="fade-right">
                     <div className="trainer-box">
                         <div className="row">
                             <div className="col-lg-6 col-md-6 col-sm-6">
@@ -48,7 +55,7 @@ export default function TraineeSection() {
                     </div>
 
                 </div>
-                <div className="col-lg-6 ">
+                <div className="col-lg-6 " data-aos="fade-left">
                 <div className="trainer-box">
                         <div className="row">
                             <div className="col-lg-6 col-md-6 col-sm-6">
@@ -83,7 +90,7 @@ export default function TraineeSection() {
         </div>
         <div className="trainer-grid mt-4">
             <div className="row">
-                <div className="col-lg-6 mb-md-5 mb-sm-4 ">
+                <div className="col-lg-6 mb-md-5 mb-sm-4 " data-aos="fade-right">
                     <div className="trainer-box">
                         <div className="row">
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -115,7 +122,7 @@ export default function TraineeSection() {
                     </div>
 
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6" data-aos="fade-left">
                 <div className="trainer-box">
                         <div className="row">
                             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">

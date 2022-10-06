@@ -5,7 +5,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1;    
+    z-index: 1;   
+    .active{
+        color: $pink !important;
+        border-bottom: 2px solid $pink;
+    } 
    
 
     .navbar-logo {
@@ -23,11 +27,9 @@
         display: grid;
         grid-template-columns: repeat(9, auto);
         grid-gap: 20px;
-        
         text-align: center;
         width: 60vw;
         justify-content: start;
-       
         margin-left: 1rem;
         font-size: 16px;
         line-height: 22px;
@@ -38,6 +40,7 @@
             display: flex;
             align-items: center;
             height: 50px;
+         
             
             .nav-links {
                 color: white;
@@ -45,7 +48,7 @@
                 font-size: 17px;
     
                 &:hover {
-                    background-color: $pink;
+                    color:$pink;
                     border-radius: 4px;
                     transition: all 0.2s ease-out;
                 }

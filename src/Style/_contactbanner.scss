@@ -1,0 +1,90 @@
+.contact-banner {
+    background: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/uploads/2022/04/cta-1.jpg);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0px;
+
+    .cta-content {
+        text-align: center;
+        color: #FFFFFF;
+
+        .cta-title {
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+
+        }
+
+        .cta-phone {
+            margin-bottom: 40px;
+            font-size: 28px;
+            line-height: 36px;
+
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+    }
+
+    .btn-area {
+        text-align: center;
+
+        .banner-btn {
+            .btn-style2 {
+
+                position: relative;
+                display: inline-block;
+                z-index: 1;
+
+
+                &:hover::before {
+                    top: 0px;
+                    left: 0px;
+
+                }
+
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    border-width: 1px;
+                    border-color: #d8d8d8;
+                    border-style: solid;
+                    position: absolute;
+                    top: -10px;
+                    left: 10px;
+                    z-index: -1;
+                    transition: all .4s ease-in-out;
+                }
+
+
+                span {
+                    padding: 13px 30px;
+                    background-color: $pink;
+                    color: white;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    transition: all 0.4s;
+                    font-weight: 500;
+
+
+
+
+
+                    i {
+                        margin-left: 7px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
