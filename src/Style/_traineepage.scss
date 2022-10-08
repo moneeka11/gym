@@ -1,0 +1,91 @@
+.trainer-group{
+    padding: 200px 0px 0px;
+    position: relative;
+    .t-box{
+        z-index: 2;
+        position: relative;
+        border-radius: 6px;
+        background-color: #fff;
+        box-shadow: 0 14px 49px rgb(0 0 0 / 14%);
+        padding: 35px 35px 29px;
+        margin-bottom: 130px;
+        .pic{
+            position: relative;
+            z-index: 1;
+            background-color: #efefef;
+            border: none;
+            border-radius: 12px;
+            text-align: center;
+            overflow: hidden;
+            margin-top: -125px;
+            img{
+                transform: scale(1.01);
+                transition: all .4s ease-in-out;
+            }
+            &::after{
+                content: "";
+                width: 45px;
+                height: 5px;
+                background-color: #ff0336;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transition: all .4s ease-in-out;
+            }
+      
+        }
+        &:hover img{
+            transform: scale(1.09);
+        }
+        &:hover .pic::after{
+            width: 300px;
+        }
+        .trainer-content{
+            margin-top: 20px;
+            text-align: center;
+            .trainer-title{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                transition: all .4s ease-in-out;
+                margin-bottom: 2px;
+                line-height: 36px;
+                a{
+                    color: #000;
+
+                }
+            }
+            .trainer-designation{
+                margin-bottom: 15px;
+                color: #888787;
+            }
+            ul{
+                display: inline-block;
+                padding: 0px;
+                li{
+                    display: inline-block;
+                    a{
+                        color: #7b7b7b;
+                        font-size: 18px;
+                        display: inline-block;
+                        width: 45px;
+                        height: 45px;
+                        text-align: center;
+                        line-height: 45px;
+                        border-radius: 50px;
+                        
+                        transition: background-color .4s ease-in-out;
+                        &:hover{
+                            background-color: #ff0336;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

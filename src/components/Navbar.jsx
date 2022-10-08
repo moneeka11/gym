@@ -5,6 +5,8 @@ import { Routes, Route, Link, NavLink } from "react-router-dom";
 import Button from './Button'
 import Home from './Home';
 import About from './About';
+import ContactPage from './ContactPage';
+import Traineer from './Traineer';
 
 export default function Navbar() {
     const [click, setClick] = useState(false);
@@ -28,7 +30,7 @@ export default function Navbar() {
                     <NavLink to="/about" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>About</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/c" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Trainer
+                    <NavLink to="/trainer" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Trainer
                     </NavLink>
                    
                 </li>
@@ -40,7 +42,7 @@ export default function Navbar() {
                 </li>
               
                 <li className="nav-item">
-                    <NavLink to="/c" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Contact</NavLink>
+                    <NavLink to="/contact" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Contact</NavLink>
                 </li>
                 <li className="nav-item">
                     <Link to="/c" className='nav-links-mobile'  onClick={closeMobileMenu} >Join Class Now</Link>
@@ -57,6 +59,8 @@ export default function Navbar() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/trainer" element={<Traineer/>} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
 
      
