@@ -1,0 +1,201 @@
+.trainer-detail-section {
+    padding: 100px 0px;
+
+    .trainer-item {
+        .trainer-info-box {
+            position: relative;
+            background: url(https://radiustheme.com/demo/wordpress/themes/gymat/wp-content/themes/gymat/assets/element/shape-121.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+            padding: 45px 40px 65px;
+            text-align: center;
+            margin-bottom: 40px;
+
+            .trainer-thums {
+                height: 221px;
+                width: 221px;
+                background-color: #fff5f2;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                border: 7px solid #fff;
+                position: relative;
+
+                &::before {
+                    background-color: $pink;
+                    content: "";
+                    height: 281px;
+                    width: 20px;
+                    border-radius: 100px;
+                    position: absolute;
+                    bottom: -40px;
+                    left: 110px;
+                    transform: rotate(50deg);
+                    z-index: -1;
+                }
+
+                &::after {
+                    content: "";
+                    height: 281px;
+                    width: 20px;
+                    border-radius: 100px;
+                    position: absolute;
+                    bottom: -20px;
+                    left: 71px;
+                    background-color: $pink;
+                    transform: rotate(50deg);
+                    z-index: -1;
+                }
+
+                img {
+                    height: 215px;
+                    object-fit: cover;
+                    width: auto;
+                    border-radius: 50%;
+                }
+            }
+
+            .trainer-info {
+                margin-top: 30px;
+                position: relative;
+                padding-bottom: 12px;
+                margin-bottom: 25px;
+
+                &::after {
+                    content: "";
+                    height: 4px;
+                    width: 42px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    background: #ff0336;
+                    transform: translateY(50%)translateX(-50%);
+                }
+
+                h2 {
+                    color: #fff;
+                    font-size: 24px;
+                    text-transform: capitalize;
+                    margin-bottom: 6px;
+                    line-height: 44px;
+                }
+
+                h4 {
+                    color: #c7c7c7;
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+
+                }
+            }
+
+            .trainer-social {
+                text-align: center;
+
+                ul {
+                    padding: 0px;
+
+                    li {
+                        display: inline-block;
+                        margin-right: 5px;
+
+                        a {
+                            display: inline-block;
+                            height: 40px;
+                            width: 40px;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #fff;
+                            color: #656565;
+                            font-size: 17px;
+                            border: none;
+                            border-radius: 50%;
+                            transition: all .3s ease-in-out;
+                            overflow: hidden;
+
+                            &:hover {
+                                color: #fff;
+                                background-color: #ff0336;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .trainer-class-schedule {
+        padding: 35px 40px;
+        background-color: #f8f8f8;
+
+        h4 {
+            font-size: 18px;
+            color: #000;
+            text-transform: capitalize;
+            line-height: 22px;
+            position: relative;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 3px;
+                width: 34px;
+                background-color: #ff0336;
+            }
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                border-bottom: 1px solid #e8e8e8;
+                padding: 11px 0;
+
+                &:first-child {
+                    padding-top: 0px;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+
+                h5 {
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    line-height: 28px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+            
+                    color: #000;
+
+                    .day {
+                        color: #000;
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+
+                    .time {
+                        font-weight: 500;
+                        color: #444;
+                    }
+                }
+            }
+        }
+    }
+}

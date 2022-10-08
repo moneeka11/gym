@@ -7,6 +7,7 @@ import Home from './Home';
 import About from './About';
 import ContactPage from './ContactPage';
 import Traineer from './Traineer';
+import Trainerdetail from './Trainerdetail';
 
 export default function Navbar() {
     const [click, setClick] = useState(false);
@@ -30,7 +31,7 @@ export default function Navbar() {
                     <NavLink to="/about" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>About</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/trainer" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Trainer
+                    <NavLink to={"/trainer"} className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Trainer
                     </NavLink>
                    
                 </li>
@@ -45,7 +46,7 @@ export default function Navbar() {
                     <NavLink to="/contact" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Contact</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link to="/c" className='nav-links-mobile'  onClick={closeMobileMenu} >Join Class Now</Link>
+                    <Link to="/contact" className='nav-links-mobile'  onClick={closeMobileMenu} >Join Class Now</Link>
                 </li>
             </ul>
             <Button />
@@ -61,6 +62,7 @@ export default function Navbar() {
         <Route path="/about" element={<About />} />
         <Route path="/trainer" element={<Traineer/>} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/trainer/trainerdetails/:id" element={<Trainerdetail/>} />
       </Routes>
 
      

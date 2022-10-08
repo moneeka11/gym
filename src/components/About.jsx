@@ -3,6 +3,7 @@ import AboutData from '../Data/AboutData'
 import { useEffect } from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
 
 
 export default function About() {
@@ -18,8 +19,8 @@ export default function About() {
             <h1 class="entry-title">About</h1>
             <div className="breadcrumb-area">
               <div className="entry-breadcrumb">
-                <span className='bread1'><a href="#">gymate - </a></span>
-                <span className='bread2'><a href="#">About</a></span>
+                <span className='bread1'><Link to="/">gymate - </Link></span>
+                <span className='bread2'><Link to="/about">About</Link></span>
               </div>
             </div>
           </div>

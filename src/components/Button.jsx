@@ -8,7 +8,7 @@ export default function Button() {
      <div className="search">
      <i class="fa-solid fa-magnifying-glass"></i>
      </div>
-    <Link to="/"><button className='btn'>Join Class Now</button></Link>
+    <Link to="/contact"><button className='btn'>Join Class Now</button></Link>
     </>
   )
 }

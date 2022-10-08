@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ContactPage() {
   return (
@@ -9,8 +10,8 @@ export default function ContactPage() {
             <h1 class="entry-title">Contact</h1>
             <div className="breadcrumb-area">
               <div className="entry-breadcrumb">
-                <span className='bread1'><a href="#">gymate - </a></span>
-                <span className='bread2'><a href="#">Contact</a></span>
+                <span className='bread1'><Link to="/">gymate - </Link></span>
+                <span className='bread2'><Link to="/contact">Contact</Link></span>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Trainerdata from '../Data/Trainerdata'
 import LogoSlider from './LogoSlider'
+import { Link } from 'react-router-dom'
 
 export default function Traineer() {
     return (
@@ -11,8 +12,8 @@ export default function Traineer() {
                         <h1 class="entry-title">Trainer</h1>
                         <div className="breadcrumb-area">
                             <div className="entry-breadcrumb">
-                                <span className='bread1'><a href="#">Gymate - </a></span>
-                                <span className='bread2'><a href="#">Trainer</a></span>
+                                <span className='bread1'><Link to="/">Gymate - </Link></span>
+                                <span className='bread2'><Link to="/trainer">Trainer</Link></span>
                             </div>
                         </div>
                     </div>
@@ -30,12 +31,14 @@ export default function Traineer() {
                           
                                     <div className="t-box">
                                 <div className="pic">
+                                <Link to={`trainerdetails/${a.id}`}>
                                     <img src={a.image} alt="trainer" />
+                                    </Link>
 
                                 </div>
                                 <div class="trainer-content">
                                     <h3 class="trainer-title">
-                                        <a href="https://radiustheme.com/demo/wordpress/themes/gymat/trainer/dorian-yates/">{a.title}</a>
+                                        <Link to={`trainerdetails/${a.id}`}>{a.title}</Link>
                                     </h3>
                                     <div class="trainer-designation">{a.subtitle}</div>
                                     <ul class="trainer-social-icon">
