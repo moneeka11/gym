@@ -8,6 +8,8 @@ import About from './About';
 import ContactPage from './ContactPage';
 import Traineer from './Traineer';
 import Trainerdetail from './Trainerdetail';
+import Classpage from './Classpage';
+import Classdetail from './Classdetail';
 
 export default function Navbar() {
     const [click, setClick] = useState(false);
@@ -36,7 +38,7 @@ export default function Navbar() {
                    
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/c" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Class</NavLink>
+                    <NavLink to="/class" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Class</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink to="/c" className='nav-links' activeClassName="active" onClick={closeMobileMenu}>Schedule</NavLink>
@@ -61,8 +63,10 @@ export default function Navbar() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/trainer" element={<Traineer/>} />
+        <Route path="/class" element={<Classpage/>} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/trainer/trainerdetails/:id" element={<Trainerdetail/>} />
+        <Route path="/class/classdetails/:id" element={<Classdetail/>} />
       </Routes>
 
      

@@ -19,7 +19,8 @@
             overflow: hidden;
             margin-top: -125px;
             img{
-                transform: scale(1.01);
+                width: 100%;
+                transform: scale(1);
                 transition: all .4s ease-in-out;
             }
             &::after{
@@ -37,7 +38,7 @@
       
         }
         &:hover img{
-            transform: scale(1.09);
+            transform: scale(1.06);
         }
         &:hover .pic::after{
             width: 300px;
@@ -54,6 +55,9 @@
                 line-height: 36px;
                 a{
                     color: #000;
+                    &:hover{
+                        color: #ff0336;
+                    }
 
                 }
             }
@@ -83,6 +87,12 @@
                         }
                     }
                 }
+            }
+            .time-sec{
+                background-color: #ff0336;
+                padding: 10px;
+                color: white;
+                border-radius: 20px;
             }
         }
 

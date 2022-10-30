@@ -74,7 +74,57 @@ export default function Trainerdetail() {
                                         </h5></li></ul>
                             </div>
                         </div>
-                        <div className="col-lg-8"></div>
+                        <div className="col-lg-8">
+                            <div className="trainer-contentt">
+                                <h3>Biography</h3>
+                                <p>Authoritatively disseminate multimedia based total linkage through marketdriven dologies areContinually transform integrated results vismultidiscnary manufacture products. Appropriately foster fully researched.disseminate multimedia based total linkage through marketdrivenvoluptates accusantium. Rerum cum est repudiandaeDeserunt iustovoluptates accusantium.</p>
+                                <p>&nbsp;</p>
+                                <h3>Qualifications</h3>
+                                <ul>
+
+                                    <li>Certificate in Fitness Instructing – Gym</li>
+                                    <li>Diploma in Fitness Instructing and Personal Training</li>
+                                    <li>Diploma in Instructing Exercise and Fitness</li>
+                                </ul>
+                                <div className="trainer-skills">
+                                    <h3 class="trainer-heading">Skills</h3>
+                                    <div className="trainer-skill-each">
+                                        <div className="trainer-name">Yoga</div>
+                                        <div className="progress">
+                                            <div className="progress-bar" data-progress="95%" style={{ width: "95%" }}>
+                                                <span>95%</span>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="trainer-skill-each">
+                                        <div className="trainer-name">Boxing</div>
+                                        <div className="progress">
+                                            <div className="progress-bar" data-progress="70%" style={{ width: "70%" }}>
+                                                <span>70%</span>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="trainer-skill-each">
+                                        <div className="trainer-name">GYM</div>
+                                        <div className="progress">
+                                            <div className="progress-bar" data-progress="85%" style={{ width: "85%" }}>
+                                                <span>85%</span>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
