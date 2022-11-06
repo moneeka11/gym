@@ -92,7 +92,7 @@ export default function About() {
                   <div className="col-lg-6">
 
                     <div className="content">
-                      <div className="cta-title"><h2>Class For Her.</h2></div>
+                      <div className="cta-title"><h2>Class For Her</h2></div>
                       <div className="cta-button">
                         <a href="#" className="btn-style3"><span>Join Our Team<i class="bi bi-arrow-right"></i></span></a>
                       </div>
