@@ -10,6 +10,9 @@ const Allclassdata = [
     time: "Wednesday: 9:00 am",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$39",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 2,
@@ -22,6 +25,9 @@ const Allclassdata = [
     time: "Friday: 1:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$50",
+    duration: "60mins",
+    intensity: "normal",
   },
   {
     id: 3,
@@ -34,6 +40,9 @@ const Allclassdata = [
     time: "Sunday: 1:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$100",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 4,
@@ -46,6 +55,9 @@ const Allclassdata = [
     time: "Sunday: 2:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$200",
+    duration: "60mins",
+    intensity: "hard",
   },
   {
     id: 5,
@@ -58,6 +70,9 @@ const Allclassdata = [
     time: "Saturday: 10:00 am",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$120",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 6,
@@ -70,6 +85,9 @@ const Allclassdata = [
     time: "Wednesday: 6:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$100",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 7,
@@ -82,6 +100,9 @@ const Allclassdata = [
     time: "Monday: 6:00pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$100",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 8,
@@ -94,6 +115,9 @@ const Allclassdata = [
     time: "Monday: 8:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$100",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 9,
@@ -106,6 +130,9 @@ const Allclassdata = [
     time: "Sunday: 8:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$100",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 10,
@@ -118,6 +145,9 @@ const Allclassdata = [
     time: "Sunday: 8:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$100",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 11,
@@ -130,6 +160,9 @@ const Allclassdata = [
     time: "Sunday: 8:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$80",
+    duration: "60mins",
+    intensity: "medium",
   },
   {
     id: 12,
@@ -142,6 +175,9 @@ const Allclassdata = [
     time: "Sunday: 8:00 pm",
     button: "JOIN NOW",
     bicon: <i class="bi bi-arrow-right"></i>,
+    courseprice: "$50",
+    duration: "60mins",
+    intensity: "hard",
   },
 ];
 export default Allclassdata;
