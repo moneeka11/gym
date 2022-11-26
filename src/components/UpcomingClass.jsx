@@ -3,6 +3,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Classdata from '../Data/Classdata';
+import { Link } from 'react-router-dom';
 
 
 
@@ -51,7 +52,7 @@ export default function UpcomingClass() {
                                                         <p>{a.timeicon} {a.time}</p>
                                                     </div>
                                                     <div className="class-btn">
-                                                        <a href="#" className='btn-style'><span>{a.button}{a.bicon}</span></a>
+                                                        <Link to="/contact" className='btn-style'><span>{a.button}{a.bicon}</span></Link>
                                                     </div>
 
                                                 </div>

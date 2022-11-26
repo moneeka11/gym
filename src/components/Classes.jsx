@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Classes() {
     return (
@@ -17,7 +18,7 @@ export default function Classes() {
                                         <div className="content">
                                             <div className="cta-title"><h2>Class For Her</h2></div>
                                             <div className="cta-button">
-                                                <a href="#" className="btn-style3"><span>Join Our Team<i class="bi bi-arrow-right"></i></span></a>
+                                                <Link to="/contact" className="btn-style3"><span>Join Our Team<i class="bi bi-arrow-right"></i></span></Link>
                                             </div>
 
                                         </div>
@@ -40,7 +41,7 @@ export default function Classes() {
                                         <div className="content">
                                             <div className="cta-title"><h2>Class For Him</h2></div>
                                             <div className="cta-button">
-                                                <a href="#" className="btn-style3"><span>Join Our Team<i class="bi bi-arrow-right"></i></span></a>
+                                                <Link to="/contact" className="btn-style3"><span>Join Our Team<i class="bi bi-arrow-right"></i></span></Link>
                                             </div>
 
                                         </div>

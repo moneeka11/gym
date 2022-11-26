@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 export default function ContactBanner() {
     return (
@@ -11,7 +13,7 @@ export default function ContactBanner() {
                     </div>
                     <div className="btn-area">
                         <div className="banner-btn">
-                            <a href="#" className='btn-style2'><span>Contact With Us<i class="fa-solid fa-arrow-right"></i></span></a>
+                            <Link to="/contact" className='btn-style2'><span>Contact With Us<i class="fa-solid fa-arrow-right"></i></span></Link>
                         </div>
 
                     </div>

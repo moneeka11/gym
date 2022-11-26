@@ -1,6 +1,7 @@
 import Aos from 'aos';
 import "aos/dist/aos.css"
 import React from 'react'
+
 import { useEffect } from 'react';
 import { Homedata } from '../Data/Homedata'
 import Aboutsection from './Aboutsection';
@@ -11,6 +12,7 @@ import TraineeSection from './TraineeSection';
 import Testinomial from './Testinomial';
 import LogoSlider from './LogoSlider';
 import ContactBanner from './ContactBanner';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
  useEffect(()=>{
@@ -42,7 +44,7 @@ export default function Home() {
                   <p>{a.pp}</p>
                 </div>
                 <div className="banner-btn">
-                  <a href="#" className='btn-style2'><span>Our Classes<i class="fa-solid fa-arrow-right"></i></span></a>
+                  <Link to="/class" className='btn-style2'><span>Our Classes<i class="fa-solid fa-arrow-right"></i></span></Link>
                 </div>
 
                   </>
